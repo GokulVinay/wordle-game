@@ -1,0 +1,197 @@
+
+/* Dark Mode for the Whole Body */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wordle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+/* Rows */
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Cells */
+.cell {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #999;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* Cell Colors */
+.green {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.yellow {
+  background-color: #c9b458;
+  color: white;
+}
+
+.gray {
+  background-color: #787c7e;
+  color: white;
+}
+
+/* Input Box */
+.input-box {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Button */
+.toggle-mode {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.toggle-mode:hover {
+  background-color: #444;
+}
+
+/* Game Over Message */
+.game-over {
+  margin-top: 20px;
+}
+
+.message {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Centering New Game Button */
+.game-over button {
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Hint Box */
+.hint-box {
+  background: #f4f4f4;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Rules Box */
+.rules-box {
+  background: #fffbea;
+  border: 2px solid #f4c542;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.rules-box ul {
+  padding-left: 20px;
+}
+
+.rules-box li {
+  margin: 5px 0;
+}
+
+/* Dark Mode Styles */
+body.dark .hint-box {
+  background: #444;
+  border: 2px solid #777;
+  color: white;
+}
+
+body.dark .rules-box {
+  background: #333;
+  border: 2px solid #f4c542;
+  color: white;
+}
